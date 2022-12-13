@@ -30,7 +30,6 @@ public class AddToCart extends Base{
 		cu.waitTillAlertToBeDisplayed(driver);
 		cu.acceptAlert(driver);
 		test.pass("Handled Alert");
-		Assert.assertTrue(false);
 		hp.getCart().click();
 		AssertJUnit.assertTrue(cu.verifyProductInCart(ProductName, driver).isDisplayed());
 		Reporter.log("Added to cart",true);
